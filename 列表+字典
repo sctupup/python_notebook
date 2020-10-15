@@ -16,3 +16,12 @@ list.copy()用于复制列表，返回复制后的新列表
 dictl.clear()删除字典内所有元素，没有返回值
 dictl.copy()返回一个字典的浅复制，即复制时只会复制父对象，而不会复制对象内部的子对象，复制后对原dict的内部的子对象进行操作时，浅复制dict会受操作影响而变化
 dictl.fromkeys(seq[,value])创建一个新字典，序列seq中的元素作为字典的键，value为字典所有键对应的初始值
+dictl.get(key,default=None)返回指定键key的值，如果值不在字典中则返回默认值
+dictl.items()以列表形式返回可遍历的（键，值）元组
+dictl.keys()以列表形式返回一个字典所有的值
+dictl.setdefault(key,default=None)和get（）类似，但如果键不存在于字典中，将会添加键并将值设为default
+dictl.update(dict2)把字典dict2的‘键，值’更新到dictl里
+dictl.values()以列表形式返回字典中的所有值
+dictl.pop(key)删除字典给定键key所对应的字典元素，返回key所对应的值
+dictl.popitem删除返回并删除字典中的一对键和值（一般删除末尾对）
+
