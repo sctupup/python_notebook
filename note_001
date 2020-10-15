@@ -35,3 +35,18 @@ str.capitalize()把字符串的第一个字符大写
 str.center(width)返回一个原字符串居中，并使用空格填充至长度width的新字符串
 str.count(substr[,start[,end]])在字符串str中统计字符串substr出现的次数，如果不指定开始位置start和结束位置end，表示从头统计到尾
 str.decode(encoding='UTF-8',errors='strict')以encoding指定的编码格式解码str，如果出错默认报一个ValueError的异常，除非errors指定的是 'ignore'或者'replace'
+str.encode(encoding='UTF-8',errors='strict')以encoding指定的编码格式解码str，如果出错默认报一个ValueError的异常，除非errors指定的是 'ignore'或者'replace'
+str.endswith(obj[,start[,end]])检查字符串是否以obj结束，如果start或者end的范围指定，则检查指定的范围内是否以obj结束，如果是，返回True，否则返回False
+str.expandtabs(tabsize=8)把字符串str中的tab符号换成转为空格，tab符号默认的空格数是8
+str.find(substr[,start[,end]])返回str中指定范围（默认是整个字符串）第一次出现的substr的第一个字母的标号，也就是说从左边算起的第一次出现substr的首字母标号，如果str中没有substr则返回-1
+str.format()格式化字符串
+str.index(substr[,start[,end]])把字符串str中查找子串substr第一次出现的位置，跟find()不同的是，未找到则抛出异常
+str.isalnum()如果str至少有一个字符并且所有字符都是字母则返回True，否则返回False
+str.isalpha()如果str至少有一个字符并且所有字符都是字母则返回True，否则返回False
+str.isdecimal()如果str只包含十进制数字则返回True，否则返回False
+str.isdigit()如果str只包含数字则返回True，否则返回False
+str.islower()如果str中包含至少一个区分大小写的字符，并且所有这些（区分大小写的）字符都是小写，则返回True，否则返回False
+str.isnumeric()如果str中只包含数字字符，则返回True，否则返回False
+str.isspace()如果str中只包含空格，则返回True，否则返回False
+str.istitle()如果str是标题话的（就是说所有单词都是以大写字母开始，其余字母均为小写）则返回True，否则返回False
+
