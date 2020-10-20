@@ -1,3 +1,15 @@
+blue='b'
+red='r'
+green='g'
+magenta='m'
+cyan='c'
+black='black'
+white='w'
+yellow='y'
+
+
+
+
 point marker='.'
 circle marker='o'
 pixel marker=','
