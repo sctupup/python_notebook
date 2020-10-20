@@ -19,3 +19,11 @@ diamond marker='D'
 thin_diamond marker='d'
 vline marker='|'
 hline marker='_'
+
+
+
+
+solid line style='-'
+dash-dot line style='-.'
+dashed line style='--'
+dotted line style=':'
