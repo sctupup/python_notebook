@@ -91,4 +91,12 @@ plt.axhline(y=0.0,c='r',ls='--',lw=2)
   ls：参考想的线条风格
   lw：参考线的线条宽度
   平移性：上面的函数功能，调用签名和参数说明同样可以平移到函数axvline()上
-  
+EX:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.sin(x)
+plt.plot(x,y,ls='-',lw=2,c='c',label='plot figure')
+plt.legend()
+plt.axvspan(xmin=4.0,xmax=6.0,facecolor='y',alpha=0.3)
+plt.axhpan(ymin=0.0,ymax=0.5,facecolor='y',alpha=0.3)
