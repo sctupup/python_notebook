@@ -146,3 +146,38 @@ plt.legend()
 
 plt.text(3.10,0.09,'y=sin(x)',weight='bold',color='b')
 plt.show()
+
+
+
+
+title()——添加图形内容的标题
+plt.title(string)
+  说明：
+  string：图形内容的标题文本
+EX:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.sin(x)
+plt.plot(x,y,ls='-',lw=2,c='c',label='plot figure')
+plt.legend()
+
+plt.title('y=sin(x)')
+plt.show()
+
+
+
+
+legend()——表示不同图形的文本标签图例
+plt.legend(loc='lower left')
+  说明：
+  loc：图例在图中的地理位置
+EX:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.sin(x)
+plt.plot(x,y,ls='-',lw=2,c='c',label='plot figure')
+
+plt.legend(loc='lower left')
+plt.show()
