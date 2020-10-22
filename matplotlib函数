@@ -1,0 +1,29 @@
+plot()——展现变量的趋势变化
+plt.plot(x,y,ls='-',lw=2,label='plot figure')
+  说明：
+  x：x轴上的数值
+  y：y轴上的数值
+  ls：折线图的线条风格
+  lw：折线图的线条宽度
+  label：标记图形内容的标签文本
+  EX:
+  import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.sin(x)
+y1=np.random.randn(100)
+
+plt.plot(x,y,ls='-',lw=2,label='plot figure')
+plt.legend()
+plt.show()
+
+
+
+
+scatter()——寻找变量之间的关系
+plt.scatter(x,y1,c='b',label='scatter figure')
+  说明：
+  x：x轴上的数值
+  y：y轴上的数值
+  c：散点图中的标记的颜色
+  label：标记图形内容的标签文本
