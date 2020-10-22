@@ -69,3 +69,19 @@ plt.text(x,y,string,weight='bold',color='b')
   说明：
   x：注释文本内容所在位置的横坐标
   y：注释文本内容所在位置的纵坐标
+
+
+
+
+title()——添加图形内容的标题
+plt.title(string)
+  说明：
+  string：图形内容的标题文本
+  
+  
+  
+  
+  legend()——表示不同图形的文本标签图例
+plt.legend(loc='lower left')
+  说明：
+  loc：图例在图中的地理位置
