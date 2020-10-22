@@ -6,8 +6,8 @@ plt.plot(x,y,ls='-',lw=2,label='plot figure')
   ls：折线图的线条风格
   lw：折线图的线条宽度
   label：标记图形内容的标签文本
-  EX:
-  import matplotlib.pyplot as plt
+EX:
+import matplotlib.pyplot as plt
 import numpy as np
 x=np.linspace(0.05,10,1000)
 y=np.sin(x)
@@ -27,3 +27,68 @@ plt.scatter(x,y1,c='b',label='scatter figure')
   y：y轴上的数值
   c：散点图中的标记的颜色
   label：标记图形内容的标签文本
+EX:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.random.rand(1000)
+plt.scatter(x,y,label='scatter figure')
+plt.legend()
+plt.show()
+
+
+
+
+xlabel()——设置x轴的标签文本
+plt.xlabel(string)
+  说明：
+  string(标签文本内容)
+  平移性：上面函数的功能，调用签名和参数说明同样可以平移到函数有ylabel()上
+EX:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.sin(x)
+
+plt.plot(x,y,ls='-',lw=2,c='c',label='plot figure')
+
+plt.legend()
+
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+
+plt.show()
+
+
+
+
+grid()——绘制刻度线的网格线
+plt.grid(linestyle=':',color='r')
+  说明：
+  linestyle：网格线的线条风格
+  color：网格线的线条颜色
+EX:
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.linspace(0.05,10,1000)
+y=np.sin(x)
+
+plt.plot(x,y,ls='-',lw=2,c='c',label='plot figure')
+
+plt.legend()
+
+plt.grid(linestyle=':',color='r')
+
+plt.show()
+
+
+
+axhiline()——绘制平行于x轴的水平参考线
+plt.axhline(y=0.0,c='r',ls='--',lw=2)
+  说明：
+  y：水平参考线的出发点
+  c：参考线的线条颜色
+  ls：参考想的线条风格
+  lw：参考线的线条宽度
+  平移性：上面的函数功能，调用签名和参数说明同样可以平移到函数axvline()上
+  
